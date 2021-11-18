@@ -23,7 +23,7 @@ class HelloController extends AbstractController
      */
     public function index(string $name = 'bob'): Response
     {
-        dump($this->paymentManager->payWith(10, 'stripe'));
+       dump($this->paymentManager->payWith(10, 'stripe'));
 
         return $this->render('hello/index.html.twig', [
             'name' => $name,
