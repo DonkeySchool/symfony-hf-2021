@@ -1,0 +1,16 @@
+version: '2'
+services:
+  php:
+    image: donkeycode/php-nginx-symfony:7.4-fpm
+    volumes:
+      - .:/var/www/symfony
+    links:
+      - db
+  db:
+    image: mysql:5.7
+    command: --sql_mode="" --default-time-zone="+00:00"  --innodb-buffer-pool-size=8G --innodb-log-buffer-size=256M --innodb-log-file-size=1G --innodb-use-native-aio=0 --innodb-write-io-threads=16 --innodb-flush-log-at-trx-commit=0
+    restart: always
+    volumes:
+        - ./sql:/var/lib/mysql
+    environment:
+        MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
