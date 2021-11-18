@@ -2,6 +2,8 @@ version: '2'
 services:
   php:
     image: donkeycode/php-nginx-symfony:7.4-fpm
+    ports:
+      - 8000:80
     volumes:
       - .:/var/www/symfony
     links:
