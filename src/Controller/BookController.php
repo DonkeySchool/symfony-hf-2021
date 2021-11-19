@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\AuthorQuery;
+use App\Model\Base\BookQuery;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Swagger\Annotations as SWG;
 use FOS\RestBundle\Controller\Annotations as Rest;
@@ -15,6 +15,10 @@ class BookController extends AbstractFOSRestController
      */
     public function cget()
     {
-        return iterator_to_array(AuthorQuery::create()->find());
+        return iterator_to_array(
+            BookQuery::create()
+                ->joinWithAuthor()
+                ->find()
+        );
     }
 }

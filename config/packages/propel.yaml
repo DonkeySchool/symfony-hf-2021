@@ -22,7 +22,7 @@ propel:
                 settings:
                     charset: utf8
                     queries:
-                        init: "SET NAMES utf8 COLLATE utf8_unicode_ci, COLLATION_CONNECTION = utf8_unicode_ci, COLLATION_DATABASE = utf8_unicode_ci, COLLATION_SERVER = utf8_unicode_ci, SQL_MODE='', SQL_SAFE_UPDATES=1" #TODO : set sql_safe_updates in mariadb server after 10.3
+                        init: "SET NAMES utf8 COLLATE utf8_unicode_ci, COLLATION_CONNECTION = utf8_unicode_ci, COLLATION_DATABASE = utf8_unicode_ci, COLLATION_SERVER = utf8_unicode_ci, SQL_MODE='', SQL_SAFE_UPDATES=0" #TODO : set sql_safe_updates in mariadb server after 10.3
         adapters:
             mysql:
                 tableType: InnoDB

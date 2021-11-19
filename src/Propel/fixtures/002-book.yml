@@ -1,0 +1,10 @@
+App\Model\Book:
+    book_crab:
+        title: Super recette de paté au crabs
+        summary: |
+          Lorem ipsum
+          dolor
+          zdfrg
+          
+        isbn: 1234
+        author_id: author_bob
