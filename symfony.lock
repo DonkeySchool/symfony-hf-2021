@@ -110,6 +110,9 @@
     "psr/log": {
         "version": "1.1.4"
     },
+    "symfony/asset": {
+        "version": "v4.4.27"
+    },
     "symfony/cache": {
         "version": "v4.4.33"
     },
@@ -353,6 +356,9 @@
             "templates/base.html.twig"
         ]
     },
+    "symfony/twig-pack": {
+        "version": "v1.0.1"
+    },
     "symfony/validator": {
         "version": "4.4",
         "recipe": {
@@ -388,6 +394,9 @@
     },
     "symfony/yaml": {
         "version": "v4.4.29"
+    },
+    "twig/extra-bundle": {
+        "version": "v3.3.3"
     },
     "twig/twig": {
         "version": "v3.3.3"
