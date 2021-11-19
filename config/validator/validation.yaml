@@ -1,0 +1,13 @@
+App\Model\Book:
+    properties:
+        title:
+            - NotBlank: ~
+            - Length:
+                min: 5
+                max: 5
+                exactMessage: The value should have exactly 5 chars 
+        isbn:
+            - NotBlank: ~
+            - Isbn: ~
+        author_id:
+            - NotBlank: ~

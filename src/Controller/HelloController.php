@@ -2,9 +2,11 @@
 
 namespace App\Controller;
 
+use App\Form\BookType;
 use App\Payment\PaymentManager;
 use App\Payment\Stripe;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -19,14 +21,23 @@ class HelloController extends AbstractController
     }
 
     /**
-     * @Route("/hello/{name}", name="hello", methods={"GET"}, requirements={"name": "\w+"})
+     * @Route("/hello/{name}", name="hello", methods={"GET", "POST"}, requirements={"name": "\w+"})
      */
-    public function index(string $name = 'bob'): Response
+    public function index(string $name = 'bob', Request $request): Response
     {
-       dump($this->paymentManager->payWith(10, 'stripe'));
+        $form = $this->createForm(BookType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $book = $form->getData();
+            $book->save();
+        }
+
+        dump($this->paymentManager->payWith(10, 'stripe'));
 
         return $this->render('hello/index.html.twig', [
             'name' => $name,
+            'form' => $form->createView(),
         ]);
     }
 }
