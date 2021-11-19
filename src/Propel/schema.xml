@@ -7,7 +7,8 @@
         </vendor>
 
         <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
-        <column name="name" type="varchar" required="true" primaryString="true" />
+        <column name="lastname" type="varchar" required="true" primaryString="true" />
+        <column name="firstname" type="varchar" required="true" />
 
         <behavior name="timestampable" />
     </table>
