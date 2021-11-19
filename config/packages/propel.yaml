@@ -1,0 +1,28 @@
+parameters:
+    database_host: db
+    database_port: 3306
+    database_name: demo
+    database_user: root
+    database_password: 
+    database_driver: pdo_mysql
+    
+propel:
+    paths:
+        schemaDir: '%kernel.root_dir%/propel'
+        sqlDir: '%kernel.root_dir%/propel/sql'
+        migrationDir: '%kernel.root_dir%/propel/migrations'
+        loaderScriptDir: '%kernel.project_dir%/var'
+    database:
+        connections:
+            default:
+                adapter: '%database_driver%'
+                user: '%database_user%'
+                password: '%database_password%'
+                dsn: '%database_driver%:host=%database_host%;dbname=%database_name%;charset=UTF8'
+                settings:
+                    charset: utf8
+                    queries:
+                        init: "SET NAMES utf8 COLLATE utf8_unicode_ci, COLLATION_CONNECTION = utf8_unicode_ci, COLLATION_DATABASE = utf8_unicode_ci, COLLATION_SERVER = utf8_unicode_ci, SQL_MODE='', SQL_SAFE_UPDATES=1" #TODO : set sql_safe_updates in mariadb server after 10.3
+        adapters:
+            mysql:
+                tableType: InnoDB
