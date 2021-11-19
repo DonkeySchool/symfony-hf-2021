@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\Base\BookQuery;
+use App\Model\BookQuery;
 use App\Model\Book;
 use FOS\RestBundle\Controller\AbstractFOSRestController;
 use Swagger\Annotations as SWG;

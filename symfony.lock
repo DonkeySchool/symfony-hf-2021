@@ -20,6 +20,9 @@
     "doctrine/lexer": {
         "version": "1.2.1"
     },
+    "exsyst/swagger": {
+        "version": "v0.4.2"
+    },
     "friendsofsymfony/rest-bundle": {
         "version": "3.1",
         "recipe": {
@@ -34,6 +37,9 @@
     },
     "jms/metadata": {
         "version": "2.5.2"
+    },
+    "jms/parser-lib": {
+        "version": "1.0.0"
     },
     "jms/serializer": {
         "version": "3.15.0"
@@ -83,6 +89,9 @@
     "nikic/php-parser": {
         "version": "v4.13.1"
     },
+    "phpcollection/phpcollection": {
+        "version": "0.5.0"
+    },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
     },
@@ -92,8 +101,8 @@
     "phpdocumentor/type-resolver": {
         "version": "1.5.1"
     },
-    "phpstan/phpdoc-parser": {
-        "version": "1.2.0"
+    "phpoption/phpoption": {
+        "version": "1.8.0"
     },
     "propel/propel": {
         "version": "2.0-dev"
@@ -403,6 +412,18 @@
     },
     "symfony/yaml": {
         "version": "v4.4.29"
+    },
+    "twig/extensions": {
+        "version": "1.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "a86723ee8d8b2f9437c8ce60a5546a1c267da5ed"
+        },
+        "files": [
+            "config/packages/twig_extensions.yaml"
+        ]
     },
     "twig/extra-bundle": {
         "version": "v3.3.3"

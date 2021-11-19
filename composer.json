@@ -6,7 +6,8 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "doctrine/annotations": "^1.13",
-        "jms/serializer-bundle": "^4.0",
+        "jms/serializer-bundle": "^2.0",
+        "friendsofsymfony/rest-bundle": "^2.0",
         "nelmio/api-doc-bundle": "^3.0",
         "nelmio/cors-bundle": "^2.1",
         "propel/propel": "dev-master#c7baa7de6b4867058ce75c4e414a3640ddd53fbd",
@@ -21,7 +22,8 @@
         "symfony/twig-bundle": "4.4.*",
         "symfony/yaml": "4.4.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/extensions": "~1.5",
+        "twig/twig": "~2.1"
     },
     "require-dev": {
         "symfony/debug-bundle": "4.4.*",

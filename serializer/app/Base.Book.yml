@@ -3,10 +3,10 @@ App\Model\Base\Book:
     properties:
         id: 
             expose: true
-            groups: [ book_cget, book_get ]
+            groups: [ book_cget, book_get, author_cget ]
         title:
             expose: true
-            groups: [ book_cget, book_get ]
+            groups: [ book_cget, book_get, author_cget ]
     virtual_properties:
         getAuthor:
             expose: true

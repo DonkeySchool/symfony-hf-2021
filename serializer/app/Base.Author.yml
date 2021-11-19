@@ -2,8 +2,10 @@ App\Model\Base\Author:
     exclusion_policy: ALL
     properties:
         id: 
-            expose: true
-            groups: [ book_cget ]
+            groups: [ book_cget, author_cget ]
         lastname:
-            expose: true
-            groups: [ book_cget ]
+            groups: [ book_cget, author_cget ]
+    virtual_properties:
+        getBooks:
+            groups: [ author_cget ]
+            type: array
