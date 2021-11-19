@@ -1,0 +1,2 @@
+App\Model\Book:
+    exclusion_policy: ALL

@@ -1,0 +1,9 @@
+App\Model\Base\Author:
+    exclusion_policy: ALL
+    properties:
+        id: 
+            expose: true
+            groups: [ book_cget ]
+        lastname:
+            expose: true
+            groups: [ book_cget ]

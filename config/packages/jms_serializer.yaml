@@ -2,9 +2,13 @@ jms_serializer:
     visitors:
         xml_serialization:
             format_output: '%kernel.debug%'
-#    metadata:
+    metadata:
 #        auto_detection: false
-#        directories:
+        directories:
+            App:
+                namespace_prefix: "App\\Model"
+                path: "%kernel.project_dir%/serializer/app"
+
 #            any-name:
 #                namespace_prefix: "My\\FooBundle"
 #                path: "@MyFooBundle/Resources/config/serializer"

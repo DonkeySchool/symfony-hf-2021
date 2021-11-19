@@ -1,0 +1,13 @@
+App\Model\Base\Book:
+    exclusion_policy: ALL
+    properties:
+        id: 
+            expose: true
+            groups: [ book_cget, book_get ]
+        title:
+            expose: true
+            groups: [ book_cget, book_get ]
+    virtual_properties:
+        getAuthor:
+            expose: true
+            groups: [ book_cget ]
