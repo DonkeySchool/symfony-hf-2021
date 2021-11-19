@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Propel;
+namespace App\Model;
 
-use App\Propel\Base\AuthorQuery as BaseAuthorQuery;
+use App\Model\Base\Author as BaseAuthor;
 
 /**
- * Skeleton subclass for performing query and update operations on the 'author' table.
+ * Skeleton subclass for representing a row from the 'author' table.
  *
  *
  *
@@ -13,7 +13,7 @@ use App\Propel\Base\AuthorQuery as BaseAuthorQuery;
  * application requirements.  This class will only be generated as
  * long as it does not already exist in the output directory.
  */
-class AuthorQuery extends BaseAuthorQuery
+class Author extends BaseAuthor
 {
 
 }
