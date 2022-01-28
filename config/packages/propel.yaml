@@ -8,9 +8,9 @@ parameters:
     
 propel:
     paths:
-        schemaDir: '%kernel.root_dir%/propel'
-        sqlDir: '%kernel.root_dir%/propel/sql'
-        migrationDir: '%kernel.root_dir%/propel/migrations'
+        schemaDir: '%kernel.root_dir%/Propel'
+        sqlDir: '%kernel.root_dir%/Propel/sql'
+        migrationDir: '%kernel.root_dir%/Propel/migrations'
         loaderScriptDir: '%kernel.project_dir%/var'
     database:
         connections:

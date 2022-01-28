@@ -9,4 +9,4 @@ rebuild-propel: ## do propel Rebuild
 	bin/console propel:model:build
 	bin/console propel:sql:build
 	bin/console propel:sql:insert --force
-	bin/console propel:fixtures:load -d src/propel/fixtures
+	bin/console propel:fixtures:load -d src/Propel/fixtures
