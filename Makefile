@@ -10,3 +10,7 @@ rebuild-propel: ## do propel Rebuild
 	bin/console propel:sql:build
 	bin/console propel:sql:insert --force
 	bin/console propel:fixtures:load -d src/Propel/fixtures
+
+install-propel: ## do propel install
+	bin/console propel:database:create
+	make rebuild
