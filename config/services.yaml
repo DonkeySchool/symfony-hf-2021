@@ -21,6 +21,8 @@ services:
         exclude:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
+            - '../src/Propel/'
+            - '../src/Model/'
             - '../src/Kernel.php'
             - '../src/Tests/'
             - '../src/propel/'
