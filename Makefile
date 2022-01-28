@@ -13,4 +13,4 @@ rebuild-propel: ## do propel Rebuild
 
 install-propel: ## do propel install
 	bin/console propel:database:create
-	make rebuild
+	make rebuild-propel
